@@ -1,5 +1,5 @@
 # ndxr.js
-NDXR is a lightweight javascript array indexer; currently <50lines of code uncompressed (this README is longer that the NDXR code).
+NDXR is a lightweight javascript array indexer; currently <50lines of code uncompressed (this README is longer than the NDXR code).
 
 It allows you to index an array of objects based, and extends itself with the object properties.
 
