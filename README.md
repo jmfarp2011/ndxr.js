@@ -40,31 +40,10 @@ ndxr.index(['name']);
 ndxr.name__Jill; // returns an array containing the Jill object
 
 //use it as an object propery to extend an object
-var person = {
-    name: 'Tom',
-    age: 21,
-    gender: 'male',
-    hometown: 'Dallas',
-    friends: [{
-        name: 'Jill',
-        age: 25,
-        gender: 'female',
-        hometown: 'Austin'
-    },{
-        name: 'Bob',
-        age: 29,
-        gender: 'male',
-        hometown: 'Houston'
-    },{
-        name: 'Jack',
-        age: 32,
-        gender: 'male',
-        hometown: 'Dallas'
-    }]
-}
+var John = people.splice(0,1)
 
-person.friends = new NDXR(person.friends, ['name']);
-person.friends.name__Jill; // returns an array containing the Jill object
+John.friends = new NDXR(people, ['name']);
+John.friends.name__Jill; // returns an array containing the Jill object
 ````
 
 #### Todo:
