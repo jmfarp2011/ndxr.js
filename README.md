@@ -37,5 +37,37 @@ ndxr.gender__male.hometown__Dallas; // returns an array containing John and Jack
 
 //reindex the array
 ndxr.index(['name']);
-ndxr.name__Jill;// returns an array containing the Jill object
+ndxr.name__Jill; // returns an array containing the Jill object
+
+//use it as an object propery to extend an object
+var person = {
+    name: 'Tom',
+    age: 21,
+    gender: 'male',
+    hometown: 'Dallas',
+    friends: [{
+        name: 'Jill',
+        age: 25,
+        gender: 'female',
+        hometown: 'Austin'
+    },{
+        name: 'Bob',
+        age: 29,
+        gender: 'male',
+        hometown: 'Houston'
+    },{
+        name: 'Jack',
+        age: 32,
+        gender: 'male',
+        hometown: 'Dallas'
+    }]
+}
+
+person.friends = new NDXR(person.friends, ['name']);
+person.friends.name__Jill; // returns an array containing the Jill object
 ````
+
+#### Todo:
+Add custom options
+Add ability to change data array
+**Open an issue if you want a new functionailty added
