@@ -47,6 +47,7 @@ John.friends.name__Jill; // returns an array containing the Jill object
 ````
 
 #### Todo:
-Add custom options
-Add ability to change data array
-**Open an issue if you want a new functionailty added
+Add custom options   
+Add ability to change data array   
+   
+*Open an issue if you want a new functionailty added*
